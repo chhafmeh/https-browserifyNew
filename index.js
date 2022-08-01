@@ -1,7 +1,6 @@
-var http = require('http')
-var url = require('url')
-
-var https = module.exports
+var https = exports, 
+    url = require('url'), 
+    http = require('http')
 
 for (var key in http) {
   if (http.hasOwnProperty(key)) https[key] = http[key]
